@@ -1,0 +1,16 @@
+{
+  "name": "libro",
+  "version": "1.0.0",
+  "description": "Library Managment System For Bosta Assesment By Zidan",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm install express"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.20.0"
+  }
+}
