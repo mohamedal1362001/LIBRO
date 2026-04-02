@@ -178,10 +178,13 @@ The server will start running on `http://localhost:3000`.
 
 ## Project Structure
 
-- `app.js`: Express application setup and middleware.
-- `server.js`: Server entry point.
-- `routes/`: API route definitions.
-- `controllers/`: Request handling logic.
-- `models/`: Database interaction logic.
-- `config/`: Configuration files (e.g., database).
-- `DB_Schema/`: SQL scripts for database setup.
+- `server.js`: The main entry point of the application.
+- `app.js`: Express application configuration, global middleware, and route mounting.
+- `routes/`: Defines the API endpoints and maps them to controllers.
+- `controllers/`: Contains the request handling logic and orchestrates models.
+- `models/`: Handles database interactions and business logic for each resource.
+- `middleware/`: Custom middleware for input validation and request filtering.
+- `config/`: Configuration settings, such as database connection parameters.
+- `DB_Schema/`: Contains the SQL scripts (`SCHEMA_QUERY.SQL`) to set up the database tables.
+- `package.json`: Project metadata, scripts, and dependencies.
+- `.gitignore`: Specifies files and directories that should be excluded from version control.
