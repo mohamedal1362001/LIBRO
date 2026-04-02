@@ -3,15 +3,15 @@ const { Parser } = require('json2csv');
 
 exports.borrowBook = (req, res) => {
   model.borrow(req.body, (err) => {
-    if (err) return res.status(500).json({ message: err.message });
-    res.json({ message: 'Book borrowed' });
+    if (err) return res.status(500).json({ message: 'The borrowing process failed. Please ensure the book and borrower IDs are correct.' });
+    res.json({ message: 'The book has been successfully checked out.' });
   });
 };
 
 exports.returnBook = (req, res) => {
   model.returnBook(req.params.id, (err) => {
-    if (err) return res.status(500).json({ message: err.message });
-    res.json({ message: 'Book returned' });
+    if (err) return res.status(500).json({ message: 'There was an issue marking the book as returned.' });
+    res.json({ message: 'The book has been successfully returned. Thank you!' });
   });
 };
 

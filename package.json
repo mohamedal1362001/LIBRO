@@ -7,11 +7,17 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "npm install express"
+   
   },
   "dependencies": {
     "express": "^5.2.1",
     "json2csv": "^6.0.0-alpha.2",
     "mysql2": "^3.20.0"
+  },
+  "devDependencies": {
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5",
+    "sinon": "^21.0.3",
+    "supertest": "^7.2.2"
   }
 }
