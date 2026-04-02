@@ -40,7 +40,7 @@ npm install
      host: 'localhost',
      user: 'your_username',
      password: 'your_password',
-     database: 'libro'
+     database: 'libro' In my case I have been named it books_db
    });
    ```
 3. Run the SQL script located in [SCHEMA_QUERY.SQL](file:///d%3A/LIBRO/DB_Schema/SCHEMA_QUERY.SQL) to set up the required tables.
